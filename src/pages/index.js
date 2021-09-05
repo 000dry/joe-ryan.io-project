@@ -5,7 +5,7 @@ import { Link, graphql } from 'gatsby'
 const IndexPage = ({ data }) => {
   return (
     <>
-      <Layout pageTitle="My Blog Posts" title={data.site.siteMetadata.title}>
+      <Layout pageTitle="New site work in progress" title={data.site.siteMetadata.title}>
         <ul>
         {
           data.allMdx.nodes.map((node) => (
