@@ -1,12 +1,13 @@
 module.exports = {
   siteMetadata: {
     siteUrl: "http://joe-ryan.io/",
-    title: "Joe Ryan",
+    title: "joe-ryan.io",
   },
   plugins: [
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sitemap",
     "gatsby-plugin-sharp",
+    "gatsby-plugin-mdx",
     {
       resolve: "gatsby-plugin-manifest",
       options: {
@@ -14,14 +15,12 @@ module.exports = {
         icon: "src/images/icon.png",
       },
     },
-    "gatsby-plugin-mdx",
     {
       resolve: "gatsby-source-filesystem",
       options: {
-        name: "pages",
-        path: "./src/pages/",
-      },
-      __key: "pages",
+        name: `blog`,
+        path: `${__dirname}/blog`,
+      }
     },
   ],
 };
