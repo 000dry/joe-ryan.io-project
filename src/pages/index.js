@@ -1,6 +1,6 @@
 import React from 'react'
 import Layout from '../components/layout/layout'
-import { graphql, useStaticQuery } from 'gatsby'
+import { graphql } from 'gatsby'
 import { MDXRenderer } from 'gatsby-plugin-mdx'
 
 const IndexPage = ({ data }) => {
@@ -41,7 +41,7 @@ export const query = graphql`
       siteMetadata {
         title
       }
-  }
+    }
   }
 `
 

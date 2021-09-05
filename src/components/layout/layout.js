@@ -17,7 +17,7 @@ const Layout = ({ pageTitle, title, children }) => {
        <Helmet>
         <title>{title}</title>
       </Helmet>
-      <header className={siteTitle}>{title}</header>
+      <header className={siteTitle}>joe-ryan.io</header>
       <nav>
         <ul className={navLinks}>
           <li className={navLinkItem}>
