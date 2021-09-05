@@ -10,6 +10,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-manifest",
       options: {
+        name: "Joe Ryan",
         icon: "src/images/icon.png",
       },
     },
