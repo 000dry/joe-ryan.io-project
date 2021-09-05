@@ -7,7 +7,7 @@ import { MDXRenderer } from 'gatsby-plugin-mdx'
 const BlogPost = ({ data }) => {
     const { site } = useSiteMetadata()
     return (
-        <Layout pageTitle={data.mdx.frontmatter.title} title={`Super Cool Blog Posts | ${site.siteMetadata.title}`}>
+        <Layout pageTitle={data.mdx.frontmatter.title} title={`${data.mdx.frontmatter.title} | ${site.siteMetadata.title}`}>
             <p>{data.mdx.frontmatter.date}</p>
             <MDXRenderer>
                 {data.mdx.body}

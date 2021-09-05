@@ -10,6 +10,8 @@ import {
   siteTitle,
   footer
 } from './layout.module.css'
+import { defineCustomElements as deckDeckGoHighlightElement } from "@deckdeckgo/highlight-code/dist/loader";
+deckDeckGoHighlightElement();
 
 const Layout = ({ pageTitle, title, children }) => {
   return (
