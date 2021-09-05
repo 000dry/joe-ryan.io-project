@@ -1,11 +1,12 @@
 module.exports = {
   siteMetadata: {
-    siteUrl: "https://www.yourdomain.tld",
-    title: "joe-ryan.io-project",
+    siteUrl: "http://joe-ryan.io/",
+    title: "Joe Ryan",
   },
   plugins: [
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sitemap",
+    "gatsby-plugin-sharp",
     {
       resolve: "gatsby-plugin-manifest",
       options: {
